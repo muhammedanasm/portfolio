@@ -296,9 +296,9 @@ const Features = () => (
       {/* Grid layout */}
       <div
         id="projects"
-        className="grid h-[210vh] w-full grid-cols-2 grid-rows-3 gap-7"
+        className="grid h-[230vh] sm:h-[210vh] w-full grid-cols-1 sm:grid-cols-2 grid-rows-4 sm:grid-rows-3 gap-7"
       >
-        <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
+        <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:ms-0">
           <a
             href="https://b2ne-nextjs-test-project.vercel.app/" // replace with actual link
             target="_blank"
@@ -316,7 +316,7 @@ const Features = () => (
           </a>
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
+        <BentoTilt className="bento-tilt_1 row-span-1  md:col-span-1 md:ms-0">
           <a
             href="https://www.swadiamonds.com/" // replace with actual link
             target="_blank"
@@ -334,7 +334,7 @@ const Features = () => (
             />
           </a>
         </BentoTilt>
-        <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
+        <BentoTilt className="bento-tilt_1 row-span-1  md:col-span-1 md:ms-0">
           <a
             href="https://welota.com/" // replace with actual link
             target="_blank"
@@ -352,7 +352,7 @@ const Features = () => (
             />
           </a>
         </BentoTilt>
-        <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
+        <BentoTilt className="bento-tilt_1 row-span-1  md:col-span-1 md:ms-0">
           <a
             href="https://core-vista.com/" // replace with actual link
             target="_blank"

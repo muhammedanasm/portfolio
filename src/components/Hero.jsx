@@ -9,14 +9,34 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
   useGSAP(() => {
-    // Background clip-path shrink to diamond
+    // gsap.fromTo(
+    //   ".hero-bg",
+    //   {
+    //     clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+    //   },
+    //   {
+    //     clipPath: "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)",
+    //     ease: "power2.out",
+    //     scrollTrigger: {
+    //       trigger: ".hero-bg",
+    //       start: "top top",
+    //       end: "bottom top",
+    //       scrub: true,
+    //     },
+    //   }
+    // );
+
+    const isMobile = window.innerWidth < 768;
+
     gsap.fromTo(
       ".hero-bg",
       {
         clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
       },
       {
-        clipPath: "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)",
+        clipPath: isMobile
+          ? "polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%)"
+          : "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)",
         ease: "power2.out",
         scrollTrigger: {
           trigger: ".hero-bg",

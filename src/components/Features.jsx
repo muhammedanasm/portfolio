@@ -147,7 +147,7 @@ const Features = () => (
       <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
         <div className="flex flex-col md:flex-row h-full w-full gap-6">
           {/* Lottie on the left */}
-          <div className="w-full md:w-1/2 flex items-center justify-center">
+          <div className="hidden md:flex w-full md:w-1/2 items-center justify-center">
             <Lottie
               animationData={animationData}
               loop
@@ -156,7 +156,7 @@ const Features = () => (
             />
           </div>
           <div
-            className="w-full md:w-1/2"
+            className="w-full md:w-1/2 "
             style={{ height: "100%", width: "100%", position: "relative" }}
           >
             <CardSwap

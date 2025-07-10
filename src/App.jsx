@@ -10,26 +10,26 @@ import Preloader from "./components/Preloader";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
-  // useEffect(() => {
-  //   const blockContextMenu = (e) => e.preventDefault();
-  //   const blockKeys = (e) => {
-  //     if (
-  //       (e.ctrlKey && e.shiftKey && e.key === "I") ||
-  //       (e.ctrlKey && e.key === "u") ||
-  //       e.key === "F12"
-  //     ) {
-  //       e.preventDefault();
-  //     }
-  //   };
+  useEffect(() => {
+    const blockContextMenu = (e) => e.preventDefault();
+    const blockKeys = (e) => {
+      if (
+        (e.ctrlKey && e.shiftKey && e.key === "I") ||
+        (e.ctrlKey && e.key === "u") ||
+        e.key === "F12"
+      ) {
+        e.preventDefault();
+      }
+    };
 
-  //   document.addEventListener("contextmenu", blockContextMenu);
-  //   document.addEventListener("keydown", blockKeys);
+    document.addEventListener("contextmenu", blockContextMenu);
+    document.addEventListener("keydown", blockKeys);
 
-  //   return () => {
-  //     document.removeEventListener("contextmenu", blockContextMenu);
-  //     document.removeEventListener("keydown", blockKeys);
-  //   };
-  // }, []);
+    return () => {
+      document.removeEventListener("contextmenu", blockContextMenu);
+      document.removeEventListener("keydown", blockKeys);
+    };
+  }, []);
 
   return (
     <main className="relative min-h-screen w-screen overflow-x-hidden">

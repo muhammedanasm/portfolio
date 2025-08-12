@@ -99,7 +99,7 @@ const Hero = () => {
           containerClass="bg-yellow-300 flex-center gap-1"
           onClick={() => {
             const link = document.createElement("a");
-            link.href = "/files/Anas.pdf";
+            link.href = "/files/MHD_ANAS.pdf";
             link.download = "Anas-CV.pdf";
             document.body.appendChild(link);
             link.click();
